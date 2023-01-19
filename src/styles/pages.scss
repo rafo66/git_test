@@ -1,0 +1,36 @@
+.content {
+    // height: 1000vh;
+    width: 100vw;
+    background-color: var(--background);
+    display: block;
+
+    h1 {
+        color: var(--headline);
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        border-bottom: 3px solid var(--headline);
+
+        .element {
+            border-right: 3px solid var(--headline);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        #element1,
+        #element2 {
+            border-bottom: 3px solid var(--headline);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+
+/*reset propreties*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    background: transparent;
+    width: .75em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--headline);
+    border-radius: 100vw;
+}
+
+body {
+    font-family: 'Poppins';
+    overflow: overlay;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background);
+
+    h1 {
+        color: var(--headline);
+    }
+}

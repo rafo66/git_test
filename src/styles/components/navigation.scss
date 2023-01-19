@@ -1,0 +1,42 @@
+.nav {
+
+    a {
+        color: var(--headline);
+    }
+
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: var(--background);
+    color: var(--headline);
+    border-bottom: 3px solid var(--headline);
+}
+
+.nav-links {
+    display: flex;
+
+    li {
+        margin: 0 25px;
+        font-size: 1.2em;
+        transition: 0.2s;
+    }
+
+    li:hover {
+        color: var(--tertiary);
+    }
+
+    .nav-active li {
+        color: var(--tertiary);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav-links {
+        display: none;
+    }
+}
